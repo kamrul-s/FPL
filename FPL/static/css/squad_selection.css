@@ -1,0 +1,71 @@
+.dropbtn {
+    margin-top: 50px;
+    background-color: purple;
+    color: navy;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .dropdown {
+    position: absolute;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display:none;
+    position: relative;
+    background-color: darkviolet;
+    min-width: 145px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    overflow: auto;
+  }
+  
+  .dropdown-content a {
+    color: white;
+    align-content: center;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: darkorchid;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: darkmagenta;}
+  
+.sq_sel{
+    height: 1200px;
+    width: 1200px;
+    margin: auto;
+}
+
+.team_create{
+    border-radius: 5px;
+    background-color: whitesmoke; 
+    padding: 20px;
+    height: 800px;
+    width: 900px;
+    float: left;
+}
+
+.sq_sel{
+    border-radius: 5px;
+    background-color:cyan; 
+    padding: 20px;
+    height: fit-content;
+    width: 1000px;
+    margin-left: 100px;
+}
+
+input[type=submit]{
+    background-color: blue;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    float: left;
+}

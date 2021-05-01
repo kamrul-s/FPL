@@ -1,0 +1,158 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta content="ie=edge" http-equiv="x-ua-compatible"><meta content="width=device-width,initial-scale=1" name="viewport">
+    <title>Fantasy Premier League</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/home.css'%}"/>
+    <link rel="shortcut icon" href = "{% static 'Images/favicon.ico'%}" type="image/x-icon">
+    <script>
+      function create_league(){
+        document.getElementById('create_form').style.display = 'block';
+        document.getElementById('join_form').style.display = 'none';
+        document.getElementById('join').style.display = 'none';
+      }
+    </script>
+    <script>
+      function join_league(){
+        document.getElementById('join_form').style.display = 'block';
+        document.getElementById('create_form').style.display = 'none';
+        document.getElementById('create').style.display = 'none';
+      }
+    </script>
+</head>
+<body>
+    <a class="navbar-brand" href="http://127.0.0.1:8000/login">
+      <img src="{% static 'Images/logo.png' %}" alt="Premier League=Logo" width="300px" height="150px" >
+      <div class="dropdown">
+        <button class="dropbtn">Premier League</button>
+        <div class="dropdown-content" >
+          <a href= "https://www.premierleague.com/" target="_blank">Home</a>
+          <a href= "https://www.premierleague.com/fixtures" target="_blank">Fixtures</a>
+          <a href= "https://www.premierleague.com/players" target="_blank">Players</a>
+          <a href= "https://www.premierleague.com/managers" target="_blank">Managers</a>
+          <a href="/">Fantasy</a>
+        </div>
+      </div>
+    </a>
+
+
+    <h2>Club Sites</h2>
+    <a href="http://www.arsenal.com/?utm_source=premier-league-website&amp;utm_campaign=website&amp;utm_medium=link" role="menuitem" target="_blank">
+    <div class="badge badge--small badge-image-container" data-size="25" data-widget="club-badge-image"><img class="badge-image badge-image--25 js-badge-image" src="{%static 'Images/t3(1).png'%}"></a>
+    <a href="https://www.avfc.co.uk/?utm_source=premier-league-website&amp;utm_campaign=website&amp;utm_medium=link" role= "menuitem" target="_blank">
+    <img class= "badge-image badge-image--25 js-badge-image" src="{%static 'Images/t7(1).png'%}"></a>
+    <a href= "https://www.brightonandhovealbion.com/?utm_source= premier-league-website&amp;utm_campaign= website&amp;utm_medium= link" role="menuitem" target="_blank">
+    <img class= "badge-image badge-image--25 js-badge-image" src="{%static 'Images/t36(1).png'%}"></a>
+    <a href =  "http://www.burnleyfootballclub.com/?utm_source= premier-league-website&amp;utm_campaign= website&amp;utm_medium=link" role="menuitem" target="_blank"><img class= "badge-image badge-image--25 js-badge-image" src="{%static 'Images/t90(1).png'%}"></a>
+    <a href= "https://www.chelseafc.com/?utm_source= premier-league-website&amp;utm_campaign= website&amp;utm_medium=link" role= "menuitem" target="_blank">
+    <img class= "badge-image badge-image--25 js-badge-image" src="{%static 'Images/t8(1).png'%}"></a>
+    <a href= "http://www.cpfc.co.uk/?utm_source= premier-league-website&amp;utm_campaign= website&amp;utm_medium=link" role= "menuitem" target= "_blank">
+    <img class= "badge-image badge-image--25 js-badge-image" src="{%static 'Images/t31(1).png'%}"></a>
+    <a href= "http://www.evertonfc.com/?utm_source= premier-league-website&amp;utm_campaign= website&amp;utm_medium=link" role= "menuitem" target= "_blank"><img class= "badge-image badge-image--25 js-badge-image" src="{%static 'Images/t11(1).png'%}"></a>
+    <a href= "http://www.fulhamfc.com/?utm_source= premier-league-website&amp;utm_campaign= website&amp;utm_medium=link" role= "menuitem" target= "_blank">
+    <img class= "badge-image badge-image--25 js-badge-image" src= "{%static 'Images/t54(1).png'%}"></a>
+    <a href="http://www.leedsunited.com/?utm_source= premier-league-website&amp;utm_campaign= website&amp;utm_medium=link" role= "menuitem" target= "_blank"><img class= "badge-image badge-image--25 js-badge-image" src= "{%static 'Images/t2(1).png'%}"></a>
+    <a href= "http://www.lcfc.com/?utm_source= premier-league-website&amp;utm_campaign= website&amp;utm_medium=link" role= "menuitem" target= "_blank">
+    <img class= "badge-image badge-image--25 js-badge-image" src= "{%static 'Images/t13(1).png'%}"></a>
+    <a href= "http://www.liverpoolfc.com/?utm_source= premier-league-website&amp;utm_campaign= website&amp;utm_medium=link" role= "menuitem" target= "_blank">
+    <img class= "badge-image badge-image--25 js-badge-image" src= "{%static 'Images/t14(1).png'%}"></a>
+    <a href= "https://www.mancity.com/?utm_source= premier-league-website&amp;utm_campaign= website&amp;utm_medium=link" role= "menuitem" target="_blank">
+    <img class= "badge-image badge-image--25 js-badge-image" src= "{%static 'Images/t43(1).png'%}"></a>
+    <a href= "http://www.manutd.com/?utm_source= premier-league-website&amp;utm_campaign= website&amp;utm_medium=link" role= "menuitem" target= "_blank">
+    <img class= "badge-image badge-image--25 js-badge-image" src= "{%static 'Images/t1(1).png'%}"></a>
+    <a href= "https://www.nufc.co.uk/?utm_source= premier-league-website&amp;utm_campaign= website&amp;utm_medium=link" role="menuitem" target= "_blank">
+    <img class= "badge-image badge-image--25 js-badge-image" src= "{%static 'Images/t4(1).png'%}"></a>
+    <a href= "https://www.sufc.co.uk/?utm_source= premier-league-website&amp;utm_campaign= website&amp;utm_medium=link" role= "menuitem" target= "_blank">
+    <img class= "badge-image badge-image--25 js-badge-image" src= "{%static 'Images/t49(1).png'%}"></a>
+    <a href= "https://www.southamptonfc.com/?utm_source=premier-league-website&amp;utm_campaign= website&amp;utm_medium= link" role= "menuitem" target= "_blank">
+    <img class= "badge-image badge-image--25 js-badge-image" src= "{%static 'Images/t20(1).png'%}"></a>
+    <a href= "http://www.tottenhamhotspur.com/?utm_source= premier-league-website&amp;utm_campaign=website&amp;utm_medium=link" role= "menuitem" target= "_blank">
+    <img class= "badge-image badge-image--25 js-badge-image" src= "{%static 'Images/t6(1).png'%}"></a>
+    <a href= "http://www.wba.co.uk/?utm_source= premier-league-website&amp;utm_campaign=website&amp;utm_medium= link" role= "menuitem" target= "_blank">
+    <img class= "badge-image badge-image--25 js-badge-image" src= "{%static 'Images/t35(1).png'%}">
+    <a href= "http://www.whufc.com/?utm_source= premier-league-website&amp;utm_campaign= website&amp;utm_medium= link" role="menuitem" target= "_blank">
+    <img class="badge-image badge-image--25 js-badge-image" src= "{%static 'Images/t21(1).png'%}"></a></a>
+    <a href= "https://www.wolves.co.uk/?utm_source= premier-league-website&amp;utm_campaign= website&amp;utm_medium=link" role= "menuitem" target= "_blank">
+    <img class= "badge-image badge-image--25 js-badge-image" src= "{%static 'Images/t39(1).png'%}"></a>
+
+    <div class="topnav" id = "topnav">
+      <a href="#home">Home</a>
+      <a href="#points">Points</a>
+      <a href="pick_team2">Pick team</a>
+      <a href="#transfers">Transfers</a>
+      <a href="leagues">Leagues</a>
+    </div>
+    <div>
+    <form action="pick_gweekshow" method="POST">
+      {% csrf_token %}
+      <div>
+      <select name="gweek" id="">
+        <option value="1" selected="selected">Gameweek 1</option>
+        <option value="2">Gameweek 2</option>
+        <option value="3">Gameweek 3</option>
+        <option value="4">Gameweek 4</option>
+        <option value="5">Gameweek 5</option>
+        <option value="6">Gameweek 6</option>
+        <option value="7">Gameweek 7</option>
+        <option value="8">Gameweek 8</option>
+        <option value="9" >Gameweek 9</option>
+        <option value="10" >Gameweek 10</option>
+        <option value="11"  >Gameweek 11</option>
+        <option value="12" >Gameweek 12</option>
+        <option value="13">Gameweek 13</option>
+        <option value="14" >Gameweek 14</option>
+        <option value="15" >Gameweek 15</option>
+        <option value="16" >Gameweek 16</option>
+        <option value="17" >Gameweek 17</option>
+        <option value="18" >Gameweek 18</option>
+        <option value="19" >Gameweek 19</option>
+        <option value="20" >Gameweek 20</option>
+        <option value="21" >Gameweek 21</option>
+        <option value="22" >Gameweek 22</option>
+        <option value="23" >Gameweek 23</option>
+        <option value="24" >Gameweek 24</option>
+        <option value="25" >Gameweek 25</option>
+        <option value="26" >Gameweek 26</option>
+        <option value="27" >Gameweek 27</option>
+        <option value="28" >Gameweek 28</option>
+        <option value="29" >Gameweek 29</option>
+        <option value="30" >Gameweek 30</option>
+        <option value="31" >Gameweek 31</option>
+        <option value="32" >Gameweek 32</option>
+        <option value="33" >Gameweek 33</option>
+        <option value="34" >Gameweek 34</option>
+        <option value="35" >Gameweek 35</option>
+        <option value="36" >Gameweek 36</option>
+        <option value="37" >Gameweek 37</option>
+        <option value="38" >Gameweek 38</option>
+      </select>
+      <div style="text-align: center;">
+        <input type="submit" value="View" size="50">
+      </div>
+    </form>
+    </div><br><br><br>
+    <div>
+    <table style="background-color: lime;">
+          <tr style="background-color: rgb(23, 199, 23);">
+            <th style="text-align: center;">Gamweek</th>
+            <th style="text-align: center;">Fix no.</th>
+            <th style="text-align: center;">Home Team</th>
+            <th style="text-align: center;">Away team</th>
+            <th style="text-align: center;">SCHEDULE</th>
+          </tr>
+          {% for p in fixtures %}
+            <tr style="background-color: rgb(52, 125, 235);">
+              <td style="text-align: center;">{{p.Gamweek}}</td>
+              <td style="text-align: center;">{{p.fixno}}</td>
+              <td style="text-align: center;">{{p.Hteam}}</td>
+              <td style="text-align: center;">{{p.Ateam}}</td>
+              <td style="text-align: center;">{{p.sdl}}</td>
+            </tr>
+          {% endfor %}
+    </table>
+    </div>
+</body>
+</html>

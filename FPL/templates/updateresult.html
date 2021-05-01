@@ -1,0 +1,234 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta content="ie=edge" http-equiv="x-ua-compatible"><meta content="width=device-width,initial-scale=1" name="viewport">
+    <title>Fantasy Premier League</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/index.css'%}"/>
+    <link rel="shortcut icon" href = "{% static 'Images/favicon.ico'%}" type="image/x-icon">
+</head>
+<body>
+    <a class="navbar-brand" href="http://127.0.0.1:8000/">
+      <img src="{% static 'Images/logo.png' %}" alt="Premier League=Logo" width="300px" height="150px" >
+      <div class="dropdown">
+        <button class="dropbtn">Premier League</button>
+        <div class="dropdown-content" >
+          <a href= "https://www.premierleague.com/" target="_blank">Home</a>
+          <a href= "https://www.premierleague.com/fixtures" target="_blank">Fixtures</a>
+          <a href= "https://www.premierleague.com/players" target="_blank">Players</a>
+          <a href= "https://www.premierleague.com/managers" target="_blank">Managers</a>
+          <a href="/">Fantasy</a>
+        </div>
+      </div>
+    </a>
+
+
+    <h2>Club Sites</h2>
+    <a href="http://www.arsenal.com/?utm_source=premier-league-website&amp;utm_campaign=website&amp;utm_medium=link" role="menuitem" target="_blank">
+    <div class="badge badge--small badge-image-container" data-size="25" data-widget="club-badge-image"><img class="badge-image badge-image--25 js-badge-image" src="{%static 'Images/t3(1).png'%}"></a>
+    <a href="https://www.avfc.co.uk/?utm_source=premier-league-website&amp;utm_campaign=website&amp;utm_medium=link" role= "menuitem" target="_blank">
+    <img class= "badge-image badge-image--25 js-badge-image" src="{%static 'Images/t7(1).png'%}"></a>
+    <a href= "https://www.brightonandhovealbion.com/?utm_source= premier-league-website&amp;utm_campaign= website&amp;utm_medium= link" role="menuitem" target="_blank">
+    <img class= "badge-image badge-image--25 js-badge-image" src="{%static 'Images/t36(1).png'%}"></a>
+    <a href =  "http://www.burnleyfootballclub.com/?utm_source= premier-league-website&amp;utm_campaign= website&amp;utm_medium=link" role="menuitem" target="_blank"><img class= "badge-image badge-image--25 js-badge-image" src="{%static 'Images/t90(1).png'%}"></a>
+    <a href= "https://www.chelseafc.com/?utm_source= premier-league-website&amp;utm_campaign= website&amp;utm_medium=link" role= "menuitem" target="_blank">
+    <img class= "badge-image badge-image--25 js-badge-image" src="{%static 'Images/t8(1).png'%}"></a>
+    <a href= "http://www.cpfc.co.uk/?utm_source= premier-league-website&amp;utm_campaign= website&amp;utm_medium=link" role= "menuitem" target= "_blank">
+    <img class= "badge-image badge-image--25 js-badge-image" src="{%static 'Images/t31(1).png'%}"></a>
+    <a href= "http://www.evertonfc.com/?utm_source= premier-league-website&amp;utm_campaign= website&amp;utm_medium=link" role= "menuitem" target= "_blank"><img class= "badge-image badge-image--25 js-badge-image" src="{%static 'Images/t11(1).png'%}"></a>
+    <a href= "http://www.fulhamfc.com/?utm_source= premier-league-website&amp;utm_campaign= website&amp;utm_medium=link" role= "menuitem" target= "_blank">
+    <img class= "badge-image badge-image--25 js-badge-image" src= "{%static 'Images/t54(1).png'%}"></a>
+    <a href="http://www.leedsunited.com/?utm_source= premier-league-website&amp;utm_campaign= website&amp;utm_medium=link" role= "menuitem" target= "_blank"><img class= "badge-image badge-image--25 js-badge-image" src= "{%static 'Images/t2(1).png'%}"></a>
+    <a href= "http://www.lcfc.com/?utm_source= premier-league-website&amp;utm_campaign= website&amp;utm_medium=link" role= "menuitem" target= "_blank">
+    <img class= "badge-image badge-image--25 js-badge-image" src= "{%static 'Images/t13(1).png'%}"></a>
+    <a href= "http://www.liverpoolfc.com/?utm_source= premier-league-website&amp;utm_campaign= website&amp;utm_medium=link" role= "menuitem" target= "_blank">
+    <img class= "badge-image badge-image--25 js-badge-image" src= "{%static 'Images/t14(1).png'%}"></a>
+    <a href= "https://www.mancity.com/?utm_source= premier-league-website&amp;utm_campaign= website&amp;utm_medium=link" role= "menuitem" target="_blank">
+    <img class= "badge-image badge-image--25 js-badge-image" src= "{%static 'Images/t43(1).png'%}"></a>
+    <a href= "http://www.manutd.com/?utm_source= premier-league-website&amp;utm_campaign= website&amp;utm_medium=link" role= "menuitem" target= "_blank">
+    <img class= "badge-image badge-image--25 js-badge-image" src= "{%static 'Images/t1(1).png'%}"></a>
+    <a href= "https://www.nufc.co.uk/?utm_source= premier-league-website&amp;utm_campaign= website&amp;utm_medium=link" role="menuitem" target= "_blank">
+    <img class= "badge-image badge-image--25 js-badge-image" src= "{%static 'Images/t4(1).png'%}"></a>
+    <a href= "https://www.sufc.co.uk/?utm_source= premier-league-website&amp;utm_campaign= website&amp;utm_medium=link" role= "menuitem" target= "_blank">
+    <img class= "badge-image badge-image--25 js-badge-image" src= "{%static 'Images/t49(1).png'%}"></a>
+    <a href= "https://www.southamptonfc.com/?utm_source=premier-league-website&amp;utm_campaign= website&amp;utm_medium= link" role= "menuitem" target= "_blank">
+    <img class= "badge-image badge-image--25 js-badge-image" src= "{%static 'Images/t20(1).png'%}"></a>
+    <a href= "http://www.tottenhamhotspur.com/?utm_source= premier-league-website&amp;utm_campaign=website&amp;utm_medium=link" role= "menuitem" target= "_blank">
+    <img class= "badge-image badge-image--25 js-badge-image" src= "{%static 'Images/t6(1).png'%}"></a>
+    <a href= "http://www.wba.co.uk/?utm_source= premier-league-website&amp;utm_campaign=website&amp;utm_medium= link" role= "menuitem" target= "_blank">
+    <img class= "badge-image badge-image--25 js-badge-image" src= "{%static 'Images/t35(1).png'%}">
+    <a href= "http://www.whufc.com/?utm_source= premier-league-website&amp;utm_campaign= website&amp;utm_medium= link" role="menuitem" target= "_blank">
+    <img class="badge-image badge-image--25 js-badge-image" src= "{%static 'Images/t21(1).png'%}"></a></a>
+    <a href= "https://www.wolves.co.uk/?utm_source= premier-league-website&amp;utm_campaign= website&amp;utm_medium=link" role= "menuitem" target= "_blank">
+    <img class= "badge-image badge-image--25 js-badge-image" src= "{%static 'Images/t39(1).png'%}"></a>
+
+
+  <div class="container">
+    <div class="topnav" id = "topnav">
+      <a href="admininsert">Insert stat </a>
+      <a href="userlogin">Log in as user </a>
+      <a href="addadmin">Aded admin</a>
+      <a href="showfix">Show fixture</a>
+    </div>
+    <div>
+      {% if messages %}
+        <ul class="messages">
+        {% for message in messages %}
+          <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>
+          {% if message.level == DEFAULT_MESSAGE_LEVELS.ERROR %}Important: {% endif %}
+          {{ message }}
+          </li>
+        {% endfor %}
+        </ul>
+      {% endif %}
+    </div>
+    <!--sign in or log in part-->
+    <div style="margin-left: 200px;">
+      <span><h1>Update result for team</h1></span>
+    </div>
+    <div style="border-radius: 5px; background-color: white; padding: 20px; width: 800px; margin-left: 200px;">
+      <form action="updateteamresult" method="POST">
+        {% csrf_token%}
+        <div class = "row">
+          <div class="col1">
+            <label for="hteam"><b>Home Team</b></label>
+          </div>
+          <div class="col2">
+            <input type="text"  name="hteam" placeholder="Must valid" size="50" maxlength="30" required>
+          </div>
+        </div><br>
+        <div class = "row">
+          <div class="col1">
+            <label for="ateam"><b>Away Team</b></label>
+          </div>
+          <div class="col2">
+            <input type="text"  name="ateam" placeholder="Must valid" size="50" maxlength="30" required>
+          </div>
+        </div><br>
+        <div class = "row">
+          <div class="col1">
+            <label for="hscore"><b>Home team score</b></label>
+          </div>
+          <div class="col2">
+            <input type="number"  name="hscore" placeholder="Must enter" size="50" maxlength="30" required>
+          </div>
+        </div><br>
+        <div class = "row">
+          <div class="col1">
+            <label for="ascore"><b>Away team score</b></label>
+          </div>
+          <div class="col2">
+            <input type="number"  name="ascore" placeholder="Must enter" size="50" maxlength="30" required>
+          </div>
+        </div><br>
+        <div class="row">
+          <input type="submit" value="updateteamresult" size="30">
+        </div>
+      </form>
+    </div><br>
+  <div style="margin-left: 200px;">
+    <span><h1>Player Update</h1></span>
+  </div>
+  <div style="border-radius: 5px; background-color: white; padding: 20px; width: 800px; margin-left: 200px;">
+    <form action="updateplayerstat" method="POST">
+      {% csrf_token%}
+      <div class = "row">
+        <div class="col1">
+          <label for="Lname"><b>Last Name of player</b></label>
+        </div>
+        <div class="col2">
+          <input type="text"  name="Lname" placeholder="Must enter" size="50" maxlength="30" required>
+        </div>
+      </div><br>
+      <div class = "row">
+        <div class="col1">
+          <label for="playpos"><b>Playing Position</b></label>
+        </div>
+        <div class="col2">
+          <input type="text"  name="playpos" placeholder="Must enter" size="50" maxlength="30" required>
+        </div>
+      </div><br>
+      <div class = "row">
+        <div class="col1">
+          <label for="Tname"><b>Team Name of player</b></label>
+        </div>
+        <div class="col2">
+          <input type="text"  name="Tname" placeholder="Must valid" size="50" maxlength="30" required>
+        </div>
+      </div><br>
+
+      <div class = "row">
+        <div class="col1">
+          <label for="hteam"><b>Home Team</b></label>
+        </div>
+        <div class="col2">
+          <input type="text"  name="hteam" placeholder="Must valid" size="50" maxlength="30" required>
+        </div>
+      </div><br>
+      <div class = "row">
+        <div class="col1">
+          <label for="ateam"><b>Away Team</b></label>
+        </div>
+        <div class="col2">
+          <input type="text"  name="ateam" placeholder="Must valid" size="50" maxlength="30" required>
+        </div>
+      </div><br>
+      <div class = "row">
+        <div class="col1">
+          <label for="pmin"><b>Played min</b></label>
+        </div>
+        <div class="col2">
+          <input type="number"  name="pmin" placeholder="Must enter" size="50" maxlength="30" required>
+        </div>
+      </div><br>
+      <div class = "row">
+        <div class="col1">
+          <label for="gscore"><b>Goal Scored</b></label>
+        </div>
+        <div class="col2">
+          <input type="number"  name="gscore" placeholder="Must Enter" size="50" maxlength="30" required>
+        </div>
+      </div><br>
+      <div class="row">
+          <div class="col1">
+            <label for="assist"><b>Assist</b></label>
+          </div>
+          <div class="col2">
+            <input type="number"  name="assist" placeholder="Must Enter" size="50" maxlength="30" required>
+          </div>
+      </div><br>
+      <div class="row">
+          <div class="col1">
+            <label for="gcon"><b>Goal concided</b></label>
+          </div>
+          <div class="col2">
+            <input type="number"  name="gcon" placeholder="Must Enter(While on the field)" size="50" maxlength="30" required>
+          </div>
+      </div><br>
+      <div class="row">
+          <div class="col1">
+            <label for="ycard"><b>Yellow Card</b></label>
+          </div>
+          <div class="col2">
+            <input type="number"  name="ycard" placeholder="Must Enter" size="50" maxlength="30" required>
+          </div>
+      </div><br>
+      <div class="row">
+          <div class="col1">
+            <label for="rcard"><b>Red Card</b></label>
+          </div>
+          <div class="col2">
+            <input type="number"  name="rcard" placeholder="Must Enter" size="50" maxlength="30" required>
+          </div>
+      </div><br>
+        <div class="row">
+        <input type="submit" value="updateplayerstat" size="30">
+      </div>
+    </form>
+  </div>
+
+</div>
+</body>
+</html>

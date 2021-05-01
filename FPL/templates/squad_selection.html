@@ -1,0 +1,155 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta content="ie=edge" http-equiv="x-ua-compatible"><meta content="width=device-width,initial-scale=1" name="viewport">
+    <title>Fantasy Premier League</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/squad_selection.css' %}"/>
+    <link rel="shortcut icon" href = "{% static 'Images/favicon.ico'%}" type="image/x-icon">    
+    <script type="text/javascript" src="{% static 'js/jquery-3.5.1.js' %}"></script>
+    <script src="{% static 'js/fullsquad.js' %}"></script>
+</head> 
+<body>
+    <a class="navbar-brand" href="http://127.0.0.1:8000/login">      
+      <img src="{% static 'Images/logo.png' %}" alt="Premier League=Logo" width="300px" height="150px" >              
+      <div class="dropdown">      
+        <button class="dropbtn">Premier League</button>
+        <div class="dropdown-content" >        
+          <a href= "https://www.premierleague.com/" target="_blank">Home</a>
+          <a href= "https://www.premierleague.com/fixtures" target="_blank">Fixtures</a>
+          <a href= "https://www.premierleague.com/players" target="_blank">Players</a>
+          <a href= "https://www.premierleague.com/managers" target="_blank">Managers</a>        
+          <a href="/">Fantasy</a>      
+        </div>        
+      </div>
+    </a>
+    
+
+    <h2>Club Sites</h2>
+    <a href="http://www.arsenal.com/?utm_source=premier-league-website&amp;utm_campaign=website&amp;utm_medium=link" role="menuitem" target="_blank">
+    <div class="badge badge--small badge-image-container" data-size="25" data-widget="club-badge-image"><img class="badge-image badge-image--25 js-badge-image" src="{%static 'Images/t3(1).png'%}"></a>
+    <a href="https://www.avfc.co.uk/?utm_source=premier-league-website&amp;utm_campaign=website&amp;utm_medium=link" role= "menuitem" target="_blank">
+    <img class= "badge-image badge-image--25 js-badge-image" src="{%static 'Images/t7(1).png'%}"></a>
+    <a href= "https://www.brightonandhovealbion.com/?utm_source= premier-league-website&amp;utm_campaign= website&amp;utm_medium= link" role="menuitem" target="_blank">
+    <img class= "badge-image badge-image--25 js-badge-image" src="{%static 'Images/t36(1).png'%}"></a>
+    <a href =  "http://www.burnleyfootballclub.com/?utm_source= premier-league-website&amp;utm_campaign= website&amp;utm_medium=link" role="menuitem" target="_blank"><img class= "badge-image badge-image--25 js-badge-image" src="{%static 'Images/t90(1).png'%}"></a>
+    <a href= "https://www.chelseafc.com/?utm_source= premier-league-website&amp;utm_campaign= website&amp;utm_medium=link" role= "menuitem" target="_blank">
+    <img class= "badge-image badge-image--25 js-badge-image" src="{%static 'Images/t8(1).png'%}"></a>
+    <a href= "http://www.cpfc.co.uk/?utm_source= premier-league-website&amp;utm_campaign= website&amp;utm_medium=link" role= "menuitem" target= "_blank">
+    <img class= "badge-image badge-image--25 js-badge-image" src="{%static 'Images/t31(1).png'%}"></a>
+    <a href= "http://www.evertonfc.com/?utm_source= premier-league-website&amp;utm_campaign= website&amp;utm_medium=link" role= "menuitem" target= "_blank"><img class= "badge-image badge-image--25 js-badge-image" src="{%static 'Images/t11(1).png'%}"></a>
+    <a href= "http://www.fulhamfc.com/?utm_source= premier-league-website&amp;utm_campaign= website&amp;utm_medium=link" role= "menuitem" target= "_blank">
+    <img class= "badge-image badge-image--25 js-badge-image" src= "{%static 'Images/t54(1).png'%}"></a>
+    <a href="http://www.leedsunited.com/?utm_source= premier-league-website&amp;utm_campaign= website&amp;utm_medium=link" role= "menuitem" target= "_blank"><img class= "badge-image badge-image--25 js-badge-image" src= "{%static 'Images/t2(1).png'%}"></a>
+    <a href= "http://www.lcfc.com/?utm_source= premier-league-website&amp;utm_campaign= website&amp;utm_medium=link" role= "menuitem" target= "_blank">
+    <img class= "badge-image badge-image--25 js-badge-image" src= "{%static 'Images/t13(1).png'%}"></a>
+    <a href= "http://www.liverpoolfc.com/?utm_source= premier-league-website&amp;utm_campaign= website&amp;utm_medium=link" role= "menuitem" target= "_blank">
+    <img class= "badge-image badge-image--25 js-badge-image" src= "{%static 'Images/t14(1).png'%}"></a>
+    <a href= "https://www.mancity.com/?utm_source= premier-league-website&amp;utm_campaign= website&amp;utm_medium=link" role= "menuitem" target="_blank">
+    <img class= "badge-image badge-image--25 js-badge-image" src= "{%static 'Images/t43(1).png'%}"></a>
+    <a href= "http://www.manutd.com/?utm_source= premier-league-website&amp;utm_campaign= website&amp;utm_medium=link" role= "menuitem" target= "_blank">
+    <img class= "badge-image badge-image--25 js-badge-image" src= "{%static 'Images/t1(1).png'%}"></a>
+    <a href= "https://www.nufc.co.uk/?utm_source= premier-league-website&amp;utm_campaign= website&amp;utm_medium=link" role="menuitem" target= "_blank">
+    <img class= "badge-image badge-image--25 js-badge-image" src= "{%static 'Images/t4(1).png'%}"></a>
+    <a href= "https://www.sufc.co.uk/?utm_source= premier-league-website&amp;utm_campaign= website&amp;utm_medium=link" role= "menuitem" target= "_blank">
+    <img class= "badge-image badge-image--25 js-badge-image" src= "{%static 'Images/t49(1).png'%}"></a>
+    <a href= "https://www.southamptonfc.com/?utm_source=premier-league-website&amp;utm_campaign= website&amp;utm_medium= link" role= "menuitem" target= "_blank">
+    <img class= "badge-image badge-image--25 js-badge-image" src= "{%static 'Images/t20(1).png'%}"></a>
+    <a href= "http://www.tottenhamhotspur.com/?utm_source= premier-league-website&amp;utm_campaign=website&amp;utm_medium=link" role= "menuitem" target= "_blank">
+    <img class= "badge-image badge-image--25 js-badge-image" src= "{%static 'Images/t6(1).png'%}"></a>
+    <a href= "http://www.wba.co.uk/?utm_source= premier-league-website&amp;utm_campaign=website&amp;utm_medium= link" role= "menuitem" target= "_blank">
+    <img class= "badge-image badge-image--25 js-badge-image" src= "{%static 'Images/t35(1).png'%}">
+    <a href= "http://www.whufc.com/?utm_source= premier-league-website&amp;utm_campaign= website&amp;utm_medium= link" role="menuitem" target= "_blank">
+    <img class="badge-image badge-image--25 js-badge-image" src= "{%static 'Images/t21(1).png'%}"></a></a>
+    <a href= "https://www.wolves.co.uk/?utm_source= premier-league-website&amp;utm_campaign= website&amp;utm_medium=link" role= "menuitem" target= "_blank">
+    <img class= "badge-image badge-image--25 js-badge-image" src= "{%static 'Images/t39(1).png'%}"></a>
+    
+    <!-- <div id="div">
+      <h2><b>Players Selected: 0 / 15</b></h2>
+    </div> -->
+    <div class="sq_sel">          
+      <div class="player_selection"><div class="sc-AykKC sc-AykKD fbEyvJ"><h3 class="SubHeading-jeif1t-0 hcKOgV">Player Selection(Choose 15 players for your squad)</h3></div>
+      <form class="fliter" role="search" action="squad_selection" method="POST" name="form" id="form">        
+        {% csrf_token %}             
+        <div>          
+          <table>
+            <tr style="background-color: lightgreen;">
+              <th>Team_Name</th>
+              <th>Id</th>
+              <th>Name</th>
+              <th>Position</th>              
+              <th>Price</th>
+              <th>Add</th>
+            </tr>
+              <div id="All" class="filter">            
+              {% for p in Players %}
+                <div id="{{p.Position}}" class="filter" >
+                  <tr>
+                    <td>
+                      {% if p.Team_name == 'Arsenal'%}
+                        <img src="{%static 'Images/t3(1).png'%}" alt="arsenal"><br><div>Arsenal</div>
+                      {% elif p.Team_name == 'Aston Villa'%}
+                        <img src="{%static 'Images/shirt_7_1-66.png'%}" alt="aston villa"><br><div>Aston Villa</div>
+                      {% elif p.Team_name == 'Brighton & Hove Albion'%}
+                        <img src="{%static 'Images/shirt_36-66.png'%}" alt="brighton"><br><div>Brighton & Hove Albion</div>
+                      {% elif p.Team_name == 'Burnley'%}
+                        <img src="{%static 'Images/t90(1).png'%}" alt="burnley"><br><div>Burnley</div>
+                      {% elif p.Team_name == 'Chelsea'%}
+                        <img src="{%static 'Images/shirt_8-66.png'%}" alt="chelsea"><br><div>Chelsea</div>
+                      {% elif p.Team_name == 'Crystal Palace'%}
+                        <img src="{%static 'Images/shirt_31-66.png'%}" alt="cp"><br><div>Crystal Palace</div>
+                      {% elif p.Team_name == 'Everton'%}
+                        <img src="{%static 'Images/shirt_11-66.png'%}" alt="everton"><br><div>Everton</div>
+                      {% elif p.Team_name == 'Fulham'%}
+                        <img src="{%static 'Images/t54(1).png'%}" alt="fulham"><br><div>Fulham</div>
+                      {% elif p.Team_name == 'Leeds United'%}
+                        <img src="{%static 'Images/shirt_2-66.png'%}" alt="lu"><br><div>Leeds United</div>
+                      {% elif p.Team_name == 'Leicester City'%}
+                        <img src="{%static 'Images/shirt_13-66.png'%}" alt="lc"><br><div>Leicester City</div>                    
+                      {% elif p.Team_name == 'Liverpool'%}
+                        <img src="{%static 'Images/shirt_14-66.png'%}" alt="lc"><br><div>Liverpool</div>
+                      {% elif p.Team_name == 'Manchester City'%}
+                        <img src="{%static 'Images/shirt_43-66.png'%}" alt="lc"><br><div>Manchester City</div>
+                      {% elif p.Team_name == 'Manchester United'%}
+                        <img src="{%static 'Images/shirt_1-66.png'%}" alt="lc"><br><div>Manchester United</div>
+                      {% elif p.Team_name == 'Newcastle United'%}
+                        <img src="{%static 'Images/shirt_4-66.png'%}" alt="lc"><br><div>Newcastle United</div>
+                      {% elif p.Team_name == 'Sheffield United'%}
+                        <img src="{%static 'Images/t49(1).png'%}" alt="lc"><br><div>Sheffield United</div>
+                      {% elif p.Team_name == 'Southampton'%}
+                        <img src="{%static 'Images/shirt_20-66.png'%}" alt="lc"><br><div>Southampton</div>
+                      {% elif p.Team_name == 'Tottenham Hotspurs'%}
+                        <img src="{%static 'Images/shirt_6-66.png'%}" alt="lc"><br><div>Tottenham</div>
+                      {% elif p.Team_name == 'West Bromwich Albion'%}
+                        <img src="{%static 'Images/t35(1).png'%}" alt="lc"><br><div>West Bromwich Albion</div>
+                      {% elif p.Team_name == 'West Ham United'%}
+                        <img src="{%static 'Images/shirt_21-66.png'%}" alt="lc"><br><div>West Ham United</div>
+                      {% elif p.Team_name == 'Wolverhampton Wanderers'%}
+                        <img src="{%static 'Images/shirt_39-66.png'%}" alt="lc"><br><div>Wolves</div>
+                      {% endif %}
+                    </td>      
+                    <td>{{p.Id}}</td>
+                    <td>{{p.Name}}</td>
+                    <td>{{p.Position}}</td>                    
+                    <td>{{p.Price}}</td>
+                    <td>                                      
+                      <span>
+                        <input type="checkbox" name="{{p.Position}}" value="{{p.Id}}">
+                      </span>
+                    </td>              
+                  </tr>
+                </div>
+              {% endfor %}          
+              </div>
+          </table>
+        </div>        
+        <br><br>
+        <input type="submit" id="sub" value="Enter Squad" size="50" disabled ="disabled">
+      </form>      
+      </div>      
+    </div>  
+  
+</body>
+</html>

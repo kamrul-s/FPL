@@ -1,0 +1,84 @@
+.dropbtn {
+    margin-top: 50px;
+    background-color: purple;
+    color: navy;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .dropdown {
+    position: absolute;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display:none;
+    position: relative;
+    background-color: darkviolet;
+    min-width: 145px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    overflow: auto;
+  }
+  
+  .dropdown-content a {
+    color: white;
+    align-content: center;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: darkorchid;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: darkmagenta;}
+  
+.container{
+    width: 1000px;
+    border-radius: 10px;
+    background-color:lightsalmon; 
+    padding: 20px;
+    height: 100%;
+    margin-left: 200px;
+  }
+
+input[type=text],select{
+    width:400px;
+    padding: 12px;
+    border:1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+
+label{
+    padding:  12px 12px 12px 0;
+    display: inline-block;
+}
+input[type=submit]{
+    background-color: blue;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    float: left;
+}
+
+[type = radio]{
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+[type=radio] + img{
+  cursor: pointer;
+}
+
+[type=radio]:checked + img{
+  outline: 2px solid pink;
+}

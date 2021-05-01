@@ -1,0 +1,285 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta content="ie=edge" http-equiv="x-ua-compatible"><meta content="width=device-width,initial-scale=1" name="viewport">
+    <title>Fantasy Premier League</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/details.css'%}"/>
+    <link rel="shortcut icon" href = "{% static 'Images/favicon.ico'%}" type="image/x-icon">
+</head>
+<body>
+    <a class="navbar-brand" href="http://127.0.0.1:8000/login">
+      <img src="{% static 'Images/logo.png' %}" alt="Premier League=Logo" width="300px" height="150px" >
+      <div class="dropdown">
+        <button class="dropbtn">Premier League</button>
+        <div class="dropdown-content" >
+          <a href= "https://www.premierleague.com/" target="_blank">Home</a>
+          <a href= "https://www.premierleague.com/fixtures" target="_blank">Fixtures</a>
+          <a href= "https://www.premierleague.com/players" target="_blank">Players</a>
+          <a href= "https://www.premierleague.com/managers" target="_blank">Managers</a>
+          <a href="/">Fantasy</a>
+        </div>
+      </div>
+    </a>
+
+
+    <h2>Club Sites</h2>
+    <a href="http://www.arsenal.com/?utm_source=premier-league-website&amp;utm_campaign=website&amp;utm_medium=link" role="menuitem" target="_blank">
+    <div class="badge badge--small badge-image-container" data-size="25" data-widget="club-badge-image"><img class="badge-image badge-image--25 js-badge-image" src="{%static 'Images/t3(1).png'%}"></a>
+    <a href="https://www.avfc.co.uk/?utm_source=premier-league-website&amp;utm_campaign=website&amp;utm_medium=link" role= "menuitem" target="_blank">
+    <img class= "badge-image badge-image--25 js-badge-image" src="{%static 'Images/t7(1).png'%}"></a>
+    <a href= "https://www.brightonandhovealbion.com/?utm_source= premier-league-website&amp;utm_campaign= website&amp;utm_medium= link" role="menuitem" target="_blank">
+    <img class= "badge-image badge-image--25 js-badge-image" src="{%static 'Images/t36(1).png'%}"></a>
+    <a href =  "http://www.burnleyfootballclub.com/?utm_source= premier-league-website&amp;utm_campaign= website&amp;utm_medium=link" role="menuitem" target="_blank"><img class= "badge-image badge-image--25 js-badge-image" src="{%static 'Images/t90(1).png'%}"></a>
+    <a href= "https://www.chelseafc.com/?utm_source= premier-league-website&amp;utm_campaign= website&amp;utm_medium=link" role= "menuitem" target="_blank">
+    <img class= "badge-image badge-image--25 js-badge-image" src="{%static 'Images/t8(1).png'%}"></a>
+    <a href= "http://www.cpfc.co.uk/?utm_source= premier-league-website&amp;utm_campaign= website&amp;utm_medium=link" role= "menuitem" target= "_blank">
+    <img class= "badge-image badge-image--25 js-badge-image" src="{%static 'Images/t31(1).png'%}"></a>
+    <a href= "http://www.evertonfc.com/?utm_source= premier-league-website&amp;utm_campaign= website&amp;utm_medium=link" role= "menuitem" target= "_blank"><img class= "badge-image badge-image--25 js-badge-image" src="{%static 'Images/t11(1).png'%}"></a>
+    <a href= "http://www.fulhamfc.com/?utm_source= premier-league-website&amp;utm_campaign= website&amp;utm_medium=link" role= "menuitem" target= "_blank">
+    <img class= "badge-image badge-image--25 js-badge-image" src= "{%static 'Images/t54(1).png'%}"></a>
+    <a href="http://www.leedsunited.com/?utm_source= premier-league-website&amp;utm_campaign= website&amp;utm_medium=link" role= "menuitem" target= "_blank"><img class= "badge-image badge-image--25 js-badge-image" src= "{%static 'Images/t2(1).png'%}"></a>
+    <a href= "http://www.lcfc.com/?utm_source= premier-league-website&amp;utm_campaign= website&amp;utm_medium=link" role= "menuitem" target= "_blank">
+    <img class= "badge-image badge-image--25 js-badge-image" src= "{%static 'Images/t13(1).png'%}"></a>
+    <a href= "http://www.liverpoolfc.com/?utm_source= premier-league-website&amp;utm_campaign= website&amp;utm_medium=link" role= "menuitem" target= "_blank">
+    <img class= "badge-image badge-image--25 js-badge-image" src= "{%static 'Images/t14(1).png'%}"></a>
+    <a href= "https://www.mancity.com/?utm_source= premier-league-website&amp;utm_campaign= website&amp;utm_medium=link" role= "menuitem" target="_blank">
+    <img class= "badge-image badge-image--25 js-badge-image" src= "{%static 'Images/t43(1).png'%}"></a>
+    <a href= "http://www.manutd.com/?utm_source= premier-league-website&amp;utm_campaign= website&amp;utm_medium=link" role= "menuitem" target= "_blank">
+    <img class= "badge-image badge-image--25 js-badge-image" src= "{%static 'Images/t1(1).png'%}"></a>
+    <a href= "https://www.nufc.co.uk/?utm_source= premier-league-website&amp;utm_campaign= website&amp;utm_medium=link" role="menuitem" target= "_blank">
+    <img class= "badge-image badge-image--25 js-badge-image" src= "{%static 'Images/t4(1).png'%}"></a>
+    <a href= "https://www.sufc.co.uk/?utm_source= premier-league-website&amp;utm_campaign= website&amp;utm_medium=link" role= "menuitem" target= "_blank">
+    <img class= "badge-image badge-image--25 js-badge-image" src= "{%static 'Images/t49(1).png'%}"></a>
+    <a href= "https://www.southamptonfc.com/?utm_source=premier-league-website&amp;utm_campaign= website&amp;utm_medium= link" role= "menuitem" target= "_blank">
+    <img class= "badge-image badge-image--25 js-badge-image" src= "{%static 'Images/t20(1).png'%}"></a>
+    <a href= "http://www.tottenhamhotspur.com/?utm_source= premier-league-website&amp;utm_campaign=website&amp;utm_medium=link" role= "menuitem" target= "_blank">
+    <img class= "badge-image badge-image--25 js-badge-image" src= "{%static 'Images/t6(1).png'%}"></a>
+    <a href= "http://www.wba.co.uk/?utm_source= premier-league-website&amp;utm_campaign=website&amp;utm_medium= link" role= "menuitem" target= "_blank">
+    <img class= "badge-image badge-image--25 js-badge-image" src= "{%static 'Images/t35(1).png'%}">
+    <a href= "http://www.whufc.com/?utm_source= premier-league-website&amp;utm_campaign= website&amp;utm_medium= link" role="menuitem" target= "_blank">
+    <img class="badge-image badge-image--25 js-badge-image" src= "{%static 'Images/t21(1).png'%}"></a></a>
+    <a href= "https://www.wolves.co.uk/?utm_source= premier-league-website&amp;utm_campaign= website&amp;utm_medium=link" role= "menuitem" target= "_blank">
+    <img class= "badge-image badge-image--25 js-badge-image" src= "{%static 'Images/t39(1).png'%}"></a>
+    <h1 style="text-align: center;">Choose your favorites</h1>
+    <div class="container">
+        <form action="details" method="POST">
+            {% csrf_token%}
+            <div class = "row">
+                <div class="col1">
+                    <label for="lastname"><b>Enter your team Name</b></label>
+                </div>
+                <div class="col2">
+                    <input type="text" required id = "tn" name="tname" size="50" maxlength="30" placeholder="at least 10 characters">
+                </div>
+            </div><br>
+            <legend class="ism-legend-as-title">Your Favourite Club</legend>
+            <div class="ism-form__group ism-form__centred">
+                <fieldset>
+                    <label for="ismjs-profile-favourite-3" class="ism-club-badge-radio__container">
+                        <input type="radio" value="Arsenal" name="favourite" id="ismjs-profile-favourite-3" class="ismjs-validate-on-blur ism-club-badge-radio">
+                        <img src="{%static 'Images/t3(1).png'%}">
+                        <span class="ism-club-badge-radio__name">Arsenal</span>
+                    </label>
+
+                    <label for="ismjs-profile-favourite-7" class="ism-club-badge-radio__container">
+                        <input type="radio" value="Aston Villa" name="favourite" id="ismjs-profile-favourite-7" class="ismjs-validate-on-blur ism-club-badge-radio">
+                        <img src="{%static 'Images/t7(1).png'%}">
+                        <span class="ism-club-badge-radio__name">Aston Villa</span>
+                    </label>
+
+                    <label for="ismjs-profile-favourite-36" class="ism-club-badge-radio__container">
+                        <input type="radio" value="Brighton & Hove Albion" name="favourite" id="ismjs-profile-favourite-36" class="ismjs-validate-on-blur ism-club-badge-radio">
+                        <img src="{%static 'Images/t36(1).png'%}">
+                        <span class="ism-club-badge-radio__name">Brighton</span>
+                    </label>
+
+                    <label for="ismjs-profile-favourite-90" class="ism-club-badge-radio__container">
+                        <input type="radio" value="Burnley" name="favourite" id="ismjs-profile-favourite-90" class="ismjs-validate-on-blur ism-club-badge-radio">
+                        <img src="{%static 'Images/t90(1).png'%}">
+                        <span class="ism-club-badge-radio__name">Burnley</span>
+                    </label>
+
+                    <label for="ismjs-profile-favourite-8" class="ism-club-badge-radio__container">
+                        <input type="radio" value="Chelsea" name="favourite" id="ismjs-profile-favourite-8" class="ismjs-validate-on-blur ism-club-badge-radio">
+                        <img src="{%static 'Images/t8(1).png'%}">
+                        <span class="ism-club-badge-radio__name">Chelsea</span>
+                    </label>
+
+                    <label for="ismjs-profile-favourite-31" class="ism-club-badge-radio__container">
+                        <input type="radio" value="Crystal Palace" name="favourite" id="ismjs-profile-favourite-31" class="ismjs-validate-on-blur ism-club-badge-radio">
+                        <img src="{%static 'Images/t31(1).png'%}">
+                        <span class="ism-club-badge-radio__name">Crystal Palace</span>
+                    </label>
+
+                    <label for="ismjs-profile-favourite-11" class="ism-club-badge-radio__container">
+                        <input type="radio" value="Everton" name="favourite" id="ismjs-profile-favourite-11" class="ismjs-validate-on-blur ism-club-badge-radio">
+                        <img src="{%static 'Images/t11(1).png'%}">
+                        <span class="ism-club-badge-radio__name">Everton</span>
+                    </label>
+
+                    <label for="ismjs-profile-favourite-54" class="ism-club-badge-radio__container">
+                        <input type="radio" value="Fulham" name="favourite" id="ismjs-profile-favourite-54" class="ismjs-validate-on-blur ism-club-badge-radio">
+                        <img src="{%static 'Images/t54(1).png'%}">
+                        <span class="ism-club-badge-radio__name">Fulham</span>
+                    </label>
+
+                    <label for="ismjs-profile-favourite-2" class="ism-club-badge-radio__container">
+                        <input type="radio" value="Leeds" name="favourite" id="ismjs-profile-favourite-2" class="ismjs-validate-on-blur ism-club-badge-radio">
+                        <img src="{%static 'Images/t2(1).png'%}">
+                        <span class="ism-club-badge-radio__name">Leeds</span>
+                    </label>
+
+                    <label for="ismjs-profile-favourite-13" class="ism-club-badge-radio__container">
+                        <input type="radio" value="Leicester" name="favourite" id="ismjs-profile-favourite-13" class="ismjs-validate-on-blur ism-club-badge-radio">
+                        <img src="{%static 'Images/t13(1).png'%}">
+                        <span class="ism-club-badge-radio__name">Leicester</span>
+                    </label>
+
+                    <label for="ismjs-profile-favourite-14" class="ism-club-badge-radio__container">
+                        <input type="radio" value="Liverpool" name="favourite" id="ismjs-profile-favourite-14" class="ismjs-validate-on-blur ism-club-badge-radio">
+                        <img src="{%static 'Images/t14(1).png'%}">
+                        <span class="ism-club-badge-radio__name">Liverpool</span>
+                    </label>
+
+                    <label for="ismjs-profile-favourite-43" class="ism-club-badge-radio__container">
+                        <input type="radio" value="Manchester City" name="favourite" id="ismjs-profile-favourite-43" class="ismjs-validate-on-blur ism-club-badge-radio">
+                        <img src="{%static 'Images/t43(1).png'%}">
+                        <span class="ism-club-badge-radio__name">Man City</span>
+                    </label>
+
+                    <label for="ismjs-profile-favourite-1" class="ism-club-badge-radio__container">
+                        <input type="radio" value="Manchester United" name="favourite" id="ismjs-profile-favourite-1" class="ismjs-validate-on-blur ism-club-badge-radio">
+                        <img src="{%static 'Images/t1(1).png'%}">
+                        <span class="ism-club-badge-radio__name">Man Utd</span>
+                    </label>
+
+                    <label for="ismjs-profile-favourite-4" class="ism-club-badge-radio__container">
+                        <input type="radio" value="Newcastle United" name="favourite" id="ismjs-profile-favourite-4" class="ismjs-validate-on-blur ism-club-badge-radio">
+                        <img src="{%static 'Images/t4(1).png'%}">
+                        <span class="ism-club-badge-radio__name">Newcastle</span>
+                    </label>
+
+                    <label for="ismjs-profile-favourite-49" class="ism-club-badge-radio__container">
+                        <input type="radio" value="Sheffield United" name="favourite" id="ismjs-profile-favourite-49" class="ismjs-validate-on-blur ism-club-badge-radio">
+                        <img src="{%static 'Images/t49(1).png'%}">
+                        <span class="ism-club-badge-radio__name">Sheffield United</span>
+                    </label><br>
+
+                    <label for="ismjs-profile-favourite-20" class="ism-club-badge-radio__container">
+                        <input type="radio" value="Southampton" name="favourite" id="ismjs-profile-favourite-20" class="ismjs-validate-on-blur ism-club-badge-radio">
+                        <img src="{%static 'Images/t20(1).png'%}">
+                        <span class="ism-club-badge-radio__name">Southampton</span>
+                    </label>
+
+                    <label for="ismjs-profile-favourite-6" class="ism-club-badge-radio__container">
+                        <input type="radio" value="Tottenham Hotspurs" name="favourite" id="ismjs-profile-favourite-6" class="ismjs-validate-on-blur ism-club-badge-radio">
+                        <img src="{%static 'Images/t6(1).png'%}">
+                        <span class="ism-club-badge-radio__name">Spurs</span>
+                    </label>
+
+                    <label for="ismjs-profile-favourite-35" class="ism-club-badge-radio__container">
+                        <input type="radio" value="West Bromwich Albion" name="favourite" id="ismjs-profile-favourite-35" class="ismjs-validate-on-blur ism-club-badge-radio">
+                        <img src="{%static 'Images/t35(1).png'%}">
+                        <span class="ism-club-badge-radio__name">West Bromwich Albion</span>
+                    </label>
+
+                    <label for="ismjs-profile-favourite-21" class="ism-club-badge-radio__container">
+                        <input type="radio" value="West Ham United" name="favourite" id="ismjs-profile-favourite-21" class="ismjs-validate-on-blur ism-club-badge-radio">
+                        <img src="{%static 'Images/t21(1).png'%}">
+                        <span class="ism-club-badge-radio__name">West Ham</span>
+                    </label>
+
+                    <label for="ismjs-profile-favourite-39" class="ism-club-badge-radio__container">
+                        <input type="radio" value="Wolverhampton Wanderers" name="favourite" id="ismjs-profile-favourite-39" class="ismjs-validate-on-blur ism-club-badge-radio">
+                        <img src="{%static 'Images/t39(1).png'%}">
+                        <span class="ism-club-badge-radio__name">Wolves</span>
+                    </label>
+
+                    <label for="ismjs-profile-favourite-0" class="ism-club-badge-radio__container">
+                        <input type="radio" value="None" name="favourite" id="ismjs-profile-favourite-0" class="ismjs-validate-on-blur ism-club-badge-radio">
+                        <img src="{%static 'Images/favicon.png'%}" width="50px" height="50px">
+                        <span class="ism-club-badge-radio__name">General PL Fan</span>
+                    </label>
+                </fieldset>
+            </div>
+
+            <div class="ism-form__group ism-form__centred-text ism-form__separator">
+                <fieldset>
+                    <legend class="ism-legend-as-title">Do you want to keep an eye on other clubs?</legend>
+                    <div class="ism-form__group">
+                        <a id="ismjs-activate-follow" class="btn-secondary">Select other clubs</a>
+                    </div>
+                    
+                    <div class="ism-radio-checkbox">
+                        <input type="checkbox" value="Arsenal" name="followed" id="ismjs-profile-followed-3">
+                        <label for="ismjs-profile-followed-3" class="ism-checkbox-radio-text">Arsenal</label>
+                    
+                        <input type="checkbox" value="Aston Villa" name="followed" id="ismjs-profile-followed-7">
+                        <label for="ismjs-profile-followed-7" class="ism-checkbox-radio-text">Aston Villa</label>
+                    
+                        <input type="checkbox" value="Brighton & Hove Albion" name="followed" id="ismjs-profile-followed-36">
+                        <label for="ismjs-profile-followed-36" class="ism-checkbox-radio-text">Brighton</label>
+                    
+                        <input type="checkbox" value="Burnley" name="followed" id="ismjs-profile-followed-90">
+                        <label for="ismjs-profile-followed-90" class="ism-checkbox-radio-text">Burnley</label>
+                    
+                        <input type="checkbox" value="Chelsea" name="followed" id="ismjs-profile-followed-8">
+                        <label for="ismjs-profile-followed-8" class="ism-checkbox-radio-text">Chelsea</label>
+                    
+                        <input type="checkbox" value="Crystal Palace" name="followed" id="ismjs-profile-followed-31">
+                        <label for="ismjs-profile-followed-31" class="ism-checkbox-radio-text">Crystal Palace</label>
+                    
+                        <input type="checkbox" value="Everton" name="followed" id="ismjs-profile-followed-11">
+                        <label for="ismjs-profile-followed-11" class="ism-checkbox-radio-text">Everton</label>
+                    
+                        <input type="checkbox" value="Fulham" name="followed" id="ismjs-profile-followed-54">
+                        <label for="ismjs-profile-followed-54" class="ism-checkbox-radio-text">Fulham</label>
+                    
+                        <input type="checkbox" value="Leeds United" name="followed" id="ismjs-profile-followed-2">
+                        <label for="ismjs-profile-followed-2" class="ism-checkbox-radio-text">Leeds</label>
+                    
+                        <input type="checkbox" value="Leicester City" name="followed" id="ismjs-profile-followed-13">
+                        <label for="ismjs-profile-followed-13" class="ism-checkbox-radio-text">Leicester</label>
+                    
+                        <input type="checkbox" value="Liverpool" name="followed" id="ismjs-profile-followed-14">
+                        <label for="ismjs-profile-followed-14" class="ism-checkbox-radio-text">Liverpool</label>
+                    
+                        <input type="checkbox" value="Manchester City" name="followed" id="ismjs-profile-followed-43">
+                        <label for="ismjs-profile-followed-43" class="ism-checkbox-radio-text">Man City</label>
+                    
+                        <input type="checkbox" value="Manchester United" name="followed" id="ismjs-profile-followed-1">
+                        <label for="ismjs-profile-followed-1" class="ism-checkbox-radio-text">Man Utd</label>
+                    
+                        <input type="checkbox" value="Newcastle United" name="followed" id="ismjs-profile-followed-4">
+                        <label for="ismjs-profile-followed-4" class="ism-checkbox-radio-text">Newcastle</label>
+                    
+                        <input type="checkbox" value="Sheffield United" name="followed" id="ismjs-profile-followed-49">
+                        <label for="ismjs-profile-followed-49" class="ism-checkbox-radio-text">Sheffield United</label>
+                    
+                        <input type="checkbox" value="Southampton" name="followed" id="ismjs-profile-followed-20">
+                        <label for="ismjs-profile-followed-20" class="ism-checkbox-radio-text">Southampton</label>
+                    
+                        <input type="checkbox" value="Tottenham Hotspurs" name="followed" id="ismjs-profile-followed-6">
+                        <label for="ismjs-profile-followed-6" class="ism-checkbox-radio-text">Spurs</label>
+                    
+                        <input type="checkbox" value="West Bromwich Albion" name="followed" id="ismjs-profile-followed-35">
+                        <label for="ismjs-profile-followed-35" class="ism-checkbox-radio-text">West Bromwich Albion</label>
+                    
+                        <input type="checkbox" value="West Ham United" name="followed" id="ismjs-profile-followed-21">
+                        <label for="ismjs-profile-followed-21" class="ism-checkbox-radio-text">West Ham</label>
+                    
+                        <input type="checkbox" value="Wolverhampton Wanderers" name="followed" id="ismjs-profile-followed-39">
+                        <label for="ismjs-profile-followed-39" class="ism-checkbox-radio-text">Wolves</label>
+                    </div>
+                </fieldset>
+            </div>            
+            <div class="row">
+                <input type="submit" value="Submit" size="30">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
